@@ -13,5 +13,13 @@ jobs:
       - name: listing files
         run: ls -la
 
+      # - name: Setup Golang on Runners
+      #   uses: actions/setup-go@v4
+      #   with:
+      #     go-version: '1.22'
+
+      - name: Check Go version
+        run: go version
+
       - name: Test Code
         run: go test -v ./...
