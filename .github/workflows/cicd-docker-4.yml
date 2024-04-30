@@ -23,3 +23,9 @@ jobs:
 
       - name: Test Code
         run: go test -v ./...
+
+      - name: Build and push
+        uses: docker/build-push-action@v5
+        with:
+          push: false
+          tags: fakhriabdillah/goapp-batch12:${{ github.run_number }}
