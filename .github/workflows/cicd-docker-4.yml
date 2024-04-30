@@ -12,3 +12,6 @@ jobs:
 
       - name: listing files
         run: ls -la
+
+      - name: Test Code
+        run: go test -v ./...
